@@ -1,0 +1,41 @@
+@import '@assets/common.module.scss';
+
+.fullScreen{
+	@extend .wFull;
+	@extend .hFull;
+	@extend .fc;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+.loginBgTop{
+	@extend .flex;
+	@extend .fdc;
+	@extend .aic;
+	@extend .jcb;
+	@extend .ptb100;
+	width: 1219px;
+	height: 577px;
+	background: url('https://img.alicdn.com/imgextra/i2/69942425/O1CN01Qc7bRH1TmgycqdOVn_!!69942425.png') no-repeat 0 0;
+}
+.loginBgBottom{
+	background: url('https://img.alicdn.com/imgextra/i2/69942425/O1CN01YTORH91TmgydT5weh_!!69942425.png') repeat-y 0 0;
+}
+.loginLogo{
+	background: url('https://img.alicdn.com/imgextra/i2/69942425/O1CN01E6mco71TmgyYiq8GV_!!69942425.png') no-repeat 0 0;
+	width: 121px;
+	height: 83px;
+}
+.loginContent{
+	@extend .w400;
+	@extend .bgWhite;
+	@extend .flex;
+	@extend .fdc;
+	@extend .jcb;
+	padding: 60px 57px 57px;
+
+	height: 264px;
+	box-shadow: 0 4px 12px 0 rgba(208,2,2,0.30);
+	border-radius: 4px;
+}

@@ -1,0 +1,19 @@
+@import './bgColor.module.scss';
+@import './fontColor.module.scss';
+@import './fontSize.module.scss';
+@import './height.module.scss';
+@import './width.module.scss';
+@import './margin.module.scss';
+@import './padding.module.scss';
+@import './flex.module.scss';
+
+.tCenter{
+	text-align: center;
+}
+.fc{
+	@extend .flex;
+	@extend .fdr;
+	@extend .jcc;
+	@extend .aic;
+	@extend .hFull;
+}

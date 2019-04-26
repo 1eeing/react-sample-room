@@ -1,0 +1,15 @@
+.hFull{
+	height: 100vh;
+}
+.mhFull{
+    min-height: 100vh;
+}
+@each $num in
+70, 100, 120, 160, 240, 360, 400 {
+	.mh#{$num} {
+		min-height: #{$num}px;
+	}
+	.h#{$num} {
+		height: #{$num}px;
+	}
+}

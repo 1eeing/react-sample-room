@@ -1,0 +1,9 @@
+.wFull{
+	width: 100%;
+}
+@each $num in
+70, 100, 120, 160,240,400 {
+	.w#{$num} {
+		width: #{$num}px;
+	}
+}

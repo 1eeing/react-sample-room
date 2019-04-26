@@ -1,0 +1,13 @@
+@import '@assets/common.module.scss';
+
+.kdzsMenuTitle{
+	img{
+		height: 24px;
+		border-radius: 3px;
+		vertical-align: middle;
+		@extend .mr10
+	}
+	@extend .pl20;
+	@extend .ptb14;
+	@extend .fs14;
+}

@@ -1,0 +1,29 @@
+@each $num in
+0, 3, 5, 10, 12, 14, 15, 16, 18, 20, 24, 26, 28, 30, 32, 50, 60, 100, 300 {
+    .mt#{$num} {
+        margin-top: #{$num}px;
+    }
+    .mr#{$num} {
+        margin-right: #{$num}px;
+    }
+    .mb#{$num} {
+        margin-bottom: #{$num}px;
+    }
+    .ml#{$num} {
+        margin-left: #{$num}px;
+    }
+    .mlr#{$num} {
+        margin-left: #{$num}px;
+        margin-right: #{$num}px;
+    }
+    .mtb#{$num} {
+        margin-top: #{$num}px;
+        margin-bottom: #{$num}px;
+    }
+    .m#{$num} {
+        margin-top: #{$num}px;
+        margin-right: #{$num}px;
+        margin-bottom: #{$num}px;
+        margin-left: #{$num}px;
+    }
+}
