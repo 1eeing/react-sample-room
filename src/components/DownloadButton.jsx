@@ -5,7 +5,7 @@ import apiList from '@config/apiList';
 
 const DownloadButton = ({api = '', params = {}, ...rest}) => {
 	if(!api) return <Button {...rest} />;
-	let url = `${apiList[api]}?kdzsTaobaoToken=${getQueryString()}`;
+	let url = `${apiList[api]}?queryString=${getQueryString()}`;
 	Object.keys(params).forEach(key => {
 		url += `&${key}=${params[key]}`;
 	});

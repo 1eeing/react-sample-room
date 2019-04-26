@@ -81,14 +81,14 @@ const useAxios = ({
 
 		if(!url) throw Error('Please configure url in /src/config/apiList.js');
 
-		// const qnquerystring = getQueryString();
+		const queryString = getQueryString();
 
 		axios({
 			url,
 			method,
 			...options,
 			CancelToken: source.token,
-			// headers: qnquerystring ? { qnquerystring } : {}
+			headers: queryString ? { queryString } : {}
 		})
 			.then(({ data }) => {
 				handler(null, data);

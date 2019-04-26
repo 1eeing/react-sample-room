@@ -1,3 +1,3 @@
 module.exports = {
-	domain: 'http://share.kuaidizs.cn',
+	domain: 'http://test.com',
 };

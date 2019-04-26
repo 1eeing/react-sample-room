@@ -8,6 +8,6 @@ export const getUserInfo = () => {
 	return userInfo;
 }
 
-export const getKdzsToken = () => sessionStorage.getItem('kdzsToken');
+export const getToken = () => sessionStorage.getItem('token');
 
-export const getQueryString = () => sessionStorage.getItem('qnquerystring');
+export const getQueryString = () => sessionStorage.getItem('queryString');

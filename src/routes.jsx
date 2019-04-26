@@ -4,23 +4,17 @@ import LayoutRoutes from '@components/layout/LayoutRoutes';
 
 const routes = [
     {
-        path: '/sources',
+        path: '/page1',
         icon: 'download',
-        title: '资源整理',
-        component: LazyLoad(() => import('@views/sources'))
+        title: '页面1',
+        component: LazyLoad(() => import('@views/page1'))
     },
     {
-        path: '/fedTool',
+        path: '/page2',
         icon: 'home',
-        title: '前端工具',
+        title: '页面2',
         // hide: true,
-        component: LazyLoad(() => import('@views/fedTool'))
-    },
-    {
-        path: '/serviceTool',
-        icon: 'home',
-        title: '后端工具',
-        component: LazyLoad(() => import('@views/serviceTool'))
+        component: LazyLoad(() => import('@views/page2'))
     },
 ];
 

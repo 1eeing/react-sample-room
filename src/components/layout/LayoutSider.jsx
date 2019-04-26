@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Layout, Menu, Icon } from 'antd';
 import { Link } from 'react-router-dom';
-import logo from '@components/layout/logo';
 import styles from '@components/layout/layout.module.scss';
+import logo from '../../logo.svg';
 
 const { Sider } = Layout;
 
@@ -15,9 +15,9 @@ const LayoutSider = ({ selectedKeys, routes }) => {
 			onCollapse={col => setCollapsed(col)}
 			theme="light"
 		>
-			<div className={styles.kdzsMenuTitle}>
-				<img src={logo} alt="logo" />
-				<span>快递助手</span>
+			<div className={styles.menuTitle}>
+				<img src={logo} />
+				<span>React</span>
 			</div>
 			<Menu selectedKeys={selectedKeys} mode="inline">
 				{routes.filter(item => !item.hide).map(item => (

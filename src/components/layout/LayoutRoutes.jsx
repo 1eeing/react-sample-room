@@ -38,7 +38,7 @@ const LayoutRoutes = withRouter(({ location, routes }) => {
 					))}
 				</Content>
 				<Footer className={styles.tCenter}>
-					Design by @快递助手.
+					Design by @Leeing.
 				</Footer>
 			</Layout>
 		</Layout>

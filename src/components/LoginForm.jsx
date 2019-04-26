@@ -21,13 +21,13 @@ const LoginForm = () => {
 					const data = json.data;
 					Message.success('登录成功');
 					// 写入session，在后续请求中需要作为Headers使用
-					const {kdzsToken, wdUser} = data;
-					sessionStorage.setItem('kdzsToken', kdzsToken);
-					sessionStorage.setItem('userInfo', JSON.stringify(wdUser));
-					const qnquerystring = kdzsToken && wdUser && wdUser.id ? `${wdUser.id}_${kdzsToken}` : '';
-					sessionStorage.setItem('qnquerystring', qnquerystring);
+					const {token, userInfo} = data;
+					sessionStorage.setItem('token', token);
+					sessionStorage.setItem('userInfo', JSON.stringify(userInfo));
+					const queryString = token && userInfo && userInfo.id ? `${userInfo.id}_${token}` : '';
+					sessionStorage.setItem('queryString', queryString);
 
-					window.location.hash = "#/ydNoCount";
+					window.location.hash = "#/fedTool";
 				}else{
 					Message.error(`登录失败：${json.message}`);
 				}
