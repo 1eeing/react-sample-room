@@ -16,7 +16,7 @@ const LayoutSider = ({ selectedKeys, routes }) => {
 			theme="light"
 		>
 			<div className={styles.menuTitle}>
-				<img src={logo} />
+				<img src={logo} alt="logo"/>
 				<span>React</span>
 			</div>
 			<Menu selectedKeys={selectedKeys} mode="inline">
