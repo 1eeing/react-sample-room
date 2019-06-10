@@ -1,7 +1,7 @@
 import { useState, useEffect, useReducer } from 'react';
 import * as defaultAxios from 'axios';
 import apiList from '@config/apiList';
-// import { getQueryString } from '@common/storage';
+import { getToken } from '@common/auth';
 
 const initialResponse = { json: null, error: null, loading: false };
 
@@ -79,16 +79,19 @@ const useAxios = ({
 		const source = CancelToken.source();
 		const url = apiList[api];
 
-		if(!url) throw Error('Please configure url in /src/config/apiList.js');
+		if(!url){
+            console.error('Please configure url in /src/config/apiList.js');
+            return;
+        }
 
-		const queryString = getQueryString();
+		const accessToken = getToken();
 
 		axios({
 			url,
 			method,
 			...options,
 			CancelToken: source.token,
-			headers: queryString ? { queryString } : {}
+			headers: accessToken ? { accessToken } : {}
 		})
 			.then(({ data }) => {
 				handler(null, data);

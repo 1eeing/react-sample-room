@@ -17,13 +17,11 @@
 	@extend .ptb100;
 	width: 1219px;
 	height: 577px;
-	background: url('https://xxx.loginBgTop.png') no-repeat 0 0;
 }
 .loginBgBottom{
-	background: url('https://xxx.loginBgBottom.png') repeat-y 0 0;
+    background-color: #f0f2f5;
 }
 .loginLogo{
-	background: url('https://xxx.logo.png') no-repeat 0 0;
 	width: 121px;
 	height: 83px;
 }
@@ -36,6 +34,6 @@
 	padding: 60px 57px 57px;
 
 	height: 264px;
-	box-shadow: 0 4px 12px 0 rgba(208,2,2,0.30);
+	box-shadow: 0 4px 12px 0 gray;
 	border-radius: 4px;
 }
