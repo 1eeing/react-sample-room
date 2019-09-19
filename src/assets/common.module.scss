@@ -11,9 +11,9 @@
 	text-align: center;
 }
 .fc{
-	@extend .flex;
-	@extend .fdr;
-	@extend .jcc;
-	@extend .aic;
-	@extend .hFull;
+	composes: flex;
+	composes: fdr;
+	composes: jcc;
+	composes: aic;
+	composes: hFull;
 }
