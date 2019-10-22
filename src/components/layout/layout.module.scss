@@ -1,13 +1,14 @@
 @import '@assets/common.module.scss';
 
 .menuTitle{
-	img{
-		height: 24px;
-		border-radius: 3px;
-		vertical-align: middle;
-		composes: mr10
-	}
 	composes: pl20;
 	composes: ptb14;
 	composes: fs14;
+}
+
+.menuLogo{
+  height: 24px;
+  border-radius: 3px;
+  vertical-align: middle;
+  composes: mr10
 }
