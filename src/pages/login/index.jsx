@@ -7,6 +7,7 @@ import { createListener } from '@1eeing/scroll-listener';
 const Login = () => {
   React.useEffect(() => {
     const listener = createListener({
+      triggerType: 'appeard',
       positions: ['main'],
       actions: [(e, position) => console.log('This is main', position)],
       requestIdleCallback: true,
