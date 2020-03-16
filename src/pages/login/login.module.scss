@@ -2,12 +2,13 @@
 
 .fullScreen{
 	composes: wFull;
-	composes: hFull;
+	// composes: hFull;
 	composes: fc;
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 1000;
+  z-index: 1000;
+  height: 3000px;
 }
 .loginBgTop{
 	composes: flex;
